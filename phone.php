@@ -13,9 +13,8 @@
 <body>
 
 <?php
-    $quest='http://university.netology.ru/u/lgolovina/phone/phone.json';
-    $resp=file_get_contents($quest);
-    $json=json_decode($resp, true);
+    $data=file_get_contents(__DIR__.'/phonebook.json');
+    $json=json_decode($data, true);
 ?>
 
 <table>
